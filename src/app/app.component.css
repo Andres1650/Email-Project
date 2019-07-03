@@ -13,16 +13,17 @@
     height: 100vh; 
     margin: -15px;
     padding: 5px;
-    border-right: 23px, black;
 }
 
 .side-menu{
-    padding:2vh;
+    padding:2.5vh;
     margin: 2vh;
+    size: 25px;
     border-width: 3px;
     border-radius: 8px;
     background-color: rgb(10, 41, 143);
     color: aliceblue;
+    
 }
 
 #button-font{
