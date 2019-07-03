@@ -2,15 +2,18 @@
 .content-row{
     height: 1vh;
     padding-bottom: 7vh;
+    padding-top: 30px;
 }
 
 #menu-col{
-    background-color: rgba(128, 128, 128, 0.438);
-    color: white;
+    background-color: rgba(185, 235, 255, 0.959);
+    color: rgb(87, 87, 87);
     width: 45vh;
     text-align: center;
     height: 100vh; 
-    /* margin-top: -14px; */
+    margin: -15px;
+    padding: 5px;
+    border-right: 23px, black;
 }
 
 .side-menu{
@@ -18,28 +21,28 @@
     margin: 2vh;
     border-width: 3px;
     border-radius: 8px;
-    background-color: deepskyblue;
-    
+    background-color: rgb(10, 41, 143);
+    color: aliceblue;
 }
 
 #button-font{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 #mail-col{
     width:  115vh;
     padding-left: 35px;
-    margin-bottom: 55px;
+    margin-top: -55px;
 }
 
 #searchBox{
-    margin-top: 35px;
     width: 1000px;
-    height: 50px;
+    height: 40px;
     padding: 9px;
     border-radius: 5px;
     border-width: 3px;
+    margin-top: 25px;
 }
 
 #all-format{
@@ -49,13 +52,15 @@
 
 .new{
     font-weight: bold;
-    color: rgba(201, 201, 201, 0.822);
+    color: rgba(172, 172, 172, 0.822);
     font-size: 16px;
 }
 
 .mail-row{
-    padding-top: 3.5vh;
+    padding-top: .8vh;
     border-width: 5px;
     border-color: rgb(27, 27, 27);
     padding-bottom: 12px;
+    border-bottom: 3px solid rgb(173, 172, 172)!important;
+    margin-top: 17px;
 }
