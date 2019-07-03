@@ -1,0 +1,47 @@
+#container,
+.content-row{
+    height: 1vh;
+    padding-bottom: 7vh;
+}
+
+#menu-col{
+    background-color: rgba(128, 128, 128, 0.438);
+    color: white;
+    width: 30vh;
+    text-align: center;
+    height: 100vh;
+}
+
+.side-menu{
+    padding:2vh;
+    margin: 1vh;
+}
+
+#mail-col{
+    width:  115vh;
+    padding-left: 35px;
+    margin-bottom: 55px;
+}
+
+#searchBox{
+    padding-left: 15vh;
+    margin-bottom: 1vh;
+
+}
+
+#all-format{
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.new{
+    /* padding-top: 3vh; */
+    font-weight: bold;
+    color: rgba(201, 201, 201, 0.822);
+    font-size: 16px;
+}
+
+.mail-row{
+    border: 2px;
+    border-color: gray;
+}
