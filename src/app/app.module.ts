@@ -3,13 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { CustomButtomComponent } from './custom-buttom/custom-buttom.component';
+import { CustomButtonComponent } from './custom-button/custom-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CustomButtomComponent
+    CustomButtomComponent,
+    CustomButtonComponent
   ],
   imports: [
     BrowserModule
