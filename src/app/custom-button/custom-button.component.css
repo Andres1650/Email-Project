@@ -1,0 +1,5 @@
+.removeShadow{
+    text-shadow:none !important;
+    border:none !important; 
+    box-shadow:none !important;
+}

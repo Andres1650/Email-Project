@@ -6,7 +6,7 @@
 }
 
 #menu-col{
-    background-color: rgba(185, 235, 255, 0.959);
+    background-color: rgba(62, 200, 255, 0.993);
     color: rgb(87, 87, 87);
     width: 45vh;
     text-align: center;
@@ -14,6 +14,7 @@
     margin: -15px;
     padding: 5px;
     position: fixed;
+    
 }
 
 .side-menu{
@@ -34,9 +35,9 @@
 
 #mail-col{
     width:  115vh;
-    padding-left: 35px;
-    margin-top: -55px;
+    margin-top: -25px;
     padding-left: 48vh; 
+    
 }
 
 #searchBox{
@@ -72,6 +73,7 @@
     padding-bottom: 12px;
     border-bottom: 3px solid rgb(173, 172, 172)!important;
     margin-top: 17px;
+    
 }
 
 #main-button{
@@ -83,8 +85,19 @@
     border-radius: 8px;
     background-color: rgb(28, 72, 196);
     color: aliceblue;
+    text-shadow:none !important;
+    border:none !important; 
+    box-shadow:none !important;
 }
 
 #address{
     color: rgba(46, 46, 46, 0.774)
+}
+
+#top-bar{
+    height: 1vh;
+    padding-bottom: 7vh;
+    padding-top: 30px;
+    align-items: center;
+    justify-items: center;
 }
