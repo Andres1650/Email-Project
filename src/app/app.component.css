@@ -62,11 +62,6 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.new{
-    font-weight: bold;
-    color: rgba(172, 172, 172, 0.822);
-    font-size: 16px;
-}
 
 .mail-row{
     padding-top: .8vh;
