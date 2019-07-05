@@ -19,10 +19,11 @@
     padding:2.5vh;
     margin: 2vh;
     size: 25px;
+    
     border-width: 3px;
     border-radius: 8px;
-    background-color: rgb(10, 41, 143);
-    color: aliceblue;
+    background-color: rgb(230, 238, 255);
+    color: rgb(0, 0, 0);
 }
 
 #button-font{
@@ -74,4 +75,15 @@
     padding-bottom: 12px;
     border-bottom: 3px solid rgb(173, 172, 172)!important;
     margin-top: 17px;
+}
+
+#main-button{
+    padding:2.5vh;
+    margin: 2vh;
+    size: 25px;
+    width: 250px;
+    border-width: 3px;
+    border-radius: 8px;
+    background-color: rgb(28, 72, 196);
+    color: aliceblue;
 }
