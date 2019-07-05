@@ -13,6 +13,7 @@
     height: 100vh; 
     margin: -15px;
     padding: 5px;
+    position: fixed;
 }
 
 .side-menu{
@@ -35,6 +36,7 @@
     width:  115vh;
     padding-left: 35px;
     margin-top: -55px;
+    padding-left: 48vh; 
 }
 
 #searchBox{
@@ -81,4 +83,8 @@
     border-radius: 8px;
     background-color: rgb(28, 72, 196);
     color: aliceblue;
+}
+
+#address{
+    color: rgba(46, 46, 46, 0.774)
 }

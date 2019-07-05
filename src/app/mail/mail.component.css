@@ -1,17 +1,23 @@
 .name{
     color: rgba(95, 95, 95, 0.486);
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: -12px;
     margin-top: -5px;
+    margin-right: 90vh;
 }
 
 .head{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .body{
     margin: -1px;
-   font-size: 17.2px; 
+   font-size: 15.2px; 
    color: rgb(61, 61, 61);
+}
+
+.inline{
+    display: flex;
+  align-items: baseline;
 }

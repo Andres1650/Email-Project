@@ -5,9 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './custom-button.component.html',
   styleUrls: ['./custom-button.component.css']
 })
-export class CustomButtonComponent implements OnInit {
 
-  
+
+export class CustomButtonComponent implements OnInit {
   
   constructor() { }
 
