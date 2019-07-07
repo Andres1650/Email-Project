@@ -47,9 +47,10 @@
     border-radius: 5px;
     border-width: 3px;
     margin-top: 25px;
-    margin-left: 430px;
+    margin-left: 30px;
     margin-bottom: 15px;
-    
+    padding-left: 50px; 
+    /* opacity: .5; */
 }
 
 
@@ -93,10 +94,7 @@
     height: 1vh;
     padding-bottom: 7vh;
     padding-top: 30px;
-    /* align-items: center;
-    justify-items: center; */
     background-color: blue;
-    
 }
 
 
@@ -139,6 +137,49 @@ html {
     color: -internal-root-color;
 }
 
-.icon-space{
-    padding-right: .8vh;
-}
+
+  input[type="text"]:focus {
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+    
+  }
+  
+  .inputWithIcon input[type="text"] {
+    padding-left: 40px;
+    
+  }
+  
+  .inputWithIcon {
+    position: fixed;
+    margin-left: 400px;
+  }
+  
+  .inputWithIcon i {
+    margin-top: 30px;
+    position: absolute;
+    left: 0;
+    top: 8px;
+    padding: 9px 8px;
+    color: #aaa;
+    transition: 0.3s;
+    margin-left: 50px;
+    
+  }
+  
+  .inputWithIcon input[type="text"]:focus + i {
+    color: dodgerBlue;
+  }
+  
+  .inputWithIcon.inputIconBg i {
+    background-color: #aaa;
+    color: #fff;
+    padding: 9px 4px;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .inputWithIcon.inputIconBg input[type="text"]:focus + i {
+    color: #fff;
+    background-color: dodgerBlue;
+  }
+  
+  
