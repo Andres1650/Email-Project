@@ -9,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 
 export class CustomButtonComponent implements OnInit {
   
+  name: string ="Inbox"
+
   constructor() { }
 
   ngOnInit() {

@@ -4,49 +4,82 @@
 <div class="container flex">
   <td>
   <div id="menu-col">
-    <div class="content-row">
-      <div>
-          <i class="fa fa-cloud"></i>
+    <div class="top-menu-row">
+      <div id="top-spacing">
+          <!-- <i class="fa fa-cloud"></i>  -->
         <p id="username">Andres Negrete</p>
      </div>
       <p id="address">andresnegrete1650@gmail.com</p>
     </div>
     <span id="button-font">
     <div class="content-row">
-      
-        <button  id="main-button">New Message</button>
+      <button  id="main-button">
+          <span class="icon-space">
+           <i class="	far fa-envelope" style='font-size:15px'></i>
+          </span>
+        New Message</button>
       </div>
 
+
     <div class="content-row">
-      <button class="side-menu">Inbox</button>
+    <button _ngcontent-voc-c19="" mat-raised-button="" class="side-menu">
+      <span class="mat-button-wrapper">
+       <span class="icon-space">
+        <i class="fas fa-archive"></i>
+      </span>
+      Inbox
+    </span></button>
     </div>
 
     <div class="content-row">
-      <button class="side-menu">Drafts</button>
+        <button _ngcontent-voc-c19="" mat-raised-button="" class="side-menu">
+          <span class="mat-button-wrapper">
+          <span class="icon-space">
+          <i class="fas fa-sticky-note"></i>
+        </span>
+          Drafts
+        </span></button>
+        </div>
+
+      <div class="content-row">
+        <button _ngcontent-voc-c19="" mat-raised-button="" class="side-menu">
+            <span class="mat-button-wrapper">
+              <span class="icon-space">
+                <i class="fas fa-file-alt"></i>
+              </span>
+             Sent
+        </span></button>
+      </div>
+
+      <div class="content-row">
+          <button _ngcontent-voc-c19="" mat-raised-button="" class="side-menu">
+            <span class="mat-button-wrapper">
+            <span class="icon-space">
+              <i class="fas fa-trash"></i>
+            </span>
+            Spam
+      </span></button>
+     </div>
+
+
+     <div class="content-row">
+        <button _ngcontent-voc-c19="" mat-raised-button="" class="side-menu">
+          <span class="mat-button-wrapper">
+          <span class="icon-space">
+            <i class="fas fa-trash-alt"></i>
+          </span>
+          Trash
+        </span></button>
     </div>
-
-    <div class="content-row">
-        <button class="side-menu">Sent</button>
-      </div>
-
-      <div class="content-row">
-          <button class="side-menu">Spam</button>
-      </div>
-
-      <div class="content-row">
-          <button class="side-menu">Trash</button>
-      </div>
     
     </span>
   </div>
   </td>
+  <div class="top-row">
+      <i class="fas fa-search"><input id= "searchBox" type="text" placeholder="Search"></i>
+  </div>
   <td class="align-top">
   <div id="mail-col">
-    <div class="top-bar ">
-      <input id= "searchBox" type="text" placeholder="Search">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <button type="submit" id="searchButton"><i class="fa fa-search"></i></button>
-    </div>
 
     <div class="mail-row ">
       <app-mail></app-mail>

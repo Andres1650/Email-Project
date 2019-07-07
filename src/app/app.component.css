@@ -2,7 +2,12 @@
 .content-row{
     height: 1vh;
     padding-bottom: 7vh;
-    padding-top: 30px;
+    padding-top: 20px;
+}
+
+#top-menu-row{
+    height: 1vh;
+    padding-top: 25px;
 }
 
 #menu-col{
@@ -14,19 +19,12 @@
     margin: -15px;
     padding: 5px;
     position: fixed;
-    
 }
 
-.side-menu{
-    padding:2.5vh;
-    margin: 2vh;
-    size: 25px;
-    
-    border-width: 3px;
-    border-radius: 8px;
-    background-color: rgb(230, 238, 255);
-    color: rgb(0, 0, 0);
+#top-spacing{
+    padding-top: 2.5vh
 }
+
 
 #button-font{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -34,31 +32,26 @@
 }
 
 #mail-col{
+    padding-top: 3vh;
     width:  115vh;
-    margin-top: -25px;
+    margin-top: 25px;
     padding-left: 48vh; 
-    
+    padding-bottom: 15px;
 }
 
 #searchBox{
+    position: fixed;
     width: 900px;
-    height: 40px;
+    height: 30px;
     padding: 9px;
     border-radius: 5px;
     border-width: 3px;
     margin-top: 25px;
-}
-
-#searchButton{
-    width: 50px;
-    height: 50px;
-    border-radius: 5px;
-    border-width: 3px;
-    margin-top: 20px;
-    margin-left: 10px;
-    background-color:rgb(119, 199, 253);
+    margin-left: 430px;
+    margin-bottom: 15px;
     
 }
+
 
 #all-format{
     font-size: 14px;
@@ -77,10 +70,10 @@
 }
 
 #main-button{
-    padding:2.5vh;
-    margin: 2vh;
+    padding:1.8vh;
+    margin: 2.5vh;
     size: 25px;
-    width: 250px;
+    width: 18vh;
     border-width: 3px;
     border-radius: 8px;
     background-color: rgb(28, 72, 196);
@@ -94,10 +87,58 @@
     color: rgba(46, 46, 46, 0.774)
 }
 
-#top-bar{
+#top-row{
+    margin-left : 150px;
+    position: fixed;
     height: 1vh;
     padding-bottom: 7vh;
     padding-top: 30px;
-    align-items: center;
-    justify-items: center;
+    /* align-items: center;
+    justify-items: center; */
+    background-color: blue;
+    
+}
+
+
+.example-button-row[_ngcontent-tyy-c19] button[_ngcontent-tyy-c19], .example-button-row[_ngcontent-tyy-c19] a[_ngcontent-tyy-c19] {
+    margin-right: 8px;
+}
+.side-menu:not([class*=mat-elevation-z]) {
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    box-sizing: border-box;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    min-width: 64px;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    overflow: visible;
+    transform: translate3d(0,0,0);
+    transition: background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1);
+}
+
+body {
+    font-family: Roboto,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    margin: 0;
+}
+user agent stylesheet
+html {
+    color: -internal-root-color;
+}
+
+.icon-space{
+    padding-right: .8vh;
 }

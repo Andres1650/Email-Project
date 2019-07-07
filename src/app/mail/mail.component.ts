@@ -5,6 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './mail.component.html',
   styleUrls: ['./mail.component.css']
 })
+
+
+
 export class MailComponent implements OnInit {
 
   sender: string =  "REAL Nigerian Prince"
