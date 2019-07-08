@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { CustomButtonComponent } from './custom-button/custom-button.component';
 import { MailComponent } from './mail/mail.component';
+import { BadgesDirective } from './badges.directive';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { MailComponent } from './mail/mail.component';
     HomeComponent,
     // CustomButtomComponent,
     CustomButtonComponent,
-    MailComponent
+    MailComponent,
+    BadgesDirective
   ],
   imports: [
     BrowserModule
