@@ -1,8 +1,9 @@
 #container,
 .content-row{
     height: 1vh;
-    padding-bottom: 7vh;
-    padding-top: 20px;
+    padding-bottom: 8vh;
+    margin-top: 5px;
+    
 }
 
 #top-menu-row{
@@ -29,10 +30,11 @@
 #button-font{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 35px;
+    
 }
 
 #mail-col{
-    padding-top: 3vh;
+    padding-top: 3.9vh;
     width:  115vh;
     margin-top: 25px;
     padding-left: 48vh; 
@@ -56,7 +58,7 @@
 
 #all-format{
     font-size: 14px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: cursive;
 }
 
 
@@ -71,8 +73,9 @@
 }
 
 #main-button{
+    font-family: cursive;
     padding:1.8vh;
-    margin: 2.5vh;
+    margin: 1.3vh;
     size: 25px;
     width: 17vh;
     border-width: 3px;
@@ -82,10 +85,18 @@
     text-shadow:none !important;
     border:none !important; 
     box-shadow:none !important;
+    font-size: 16px;
+    
 }
 
 #address{
-    color: rgba(46, 46, 46, 0.774)
+    color: rgb(255, 255, 255);
+}
+
+#username{
+    font-size: 18px;
+    color: black;
+    font-family: cursive
 }
 
 #top-row{
@@ -97,11 +108,12 @@
     background-color: blue;
 }
 
-
 .example-button-row[_ngcontent-tyy-c19] button[_ngcontent-tyy-c19], .example-button-row[_ngcontent-tyy-c19] a[_ngcontent-tyy-c19] {
     margin-right: 8px;
 }
 .side-menu:not([class*=mat-elevation-z]) {
+    font-family: cursive;
+    font-size: 16px;
     box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
     box-sizing: border-box;
     position: relative;
@@ -121,6 +133,7 @@
     margin: 0;
     min-width: 64px;
     line-height: 36px;
+    width: 120px;
     padding: 0 16px;
     border-radius: 4px;
     overflow: visible;
@@ -164,6 +177,16 @@ html {
     transition: 0.3s;
     margin-left: 50px;
     
+  }
+
+  #top-menu-btn{
+    position: fixed;
+    margin-left: 151vh;
+    padding-top: 4.5vh;
+  }
+
+  .top-btn-spacing{
+      padding-right: 1.5vh;
   }
   
   .inputWithIcon input[type="text"]:focus + i {
