@@ -12,7 +12,7 @@
 }
 
 #menu-col{
-    background-color: rgba(62, 200, 255, 0.993);
+    background-color: rgba(0, 93, 233, 0.993);
     color: rgb(87, 87, 87);
     width: 45vh;
     text-align: center;
@@ -73,13 +73,13 @@
 
 #main-button{
     font-family: cursive;
-    padding:1.8vh;
+    padding:1.55vh;
     margin: 1.3vh;
     size: 25px;
     width: 17vh;
     border-width: 3px;
     border-radius: 8px;
-    background-color: rgb(28, 72, 196);
+    background-color: rgb(4, 22, 126);
     color: aliceblue;
     text-shadow:none !important;
     border:none !important; 
@@ -94,7 +94,7 @@
 
 #username{
     font-size: 18px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-family: cursive
 }
 
@@ -205,4 +205,6 @@ html {
     background-color: dodgerBlue;
   }
   
-  
+  .icon-space{
+    margin-right: 8px;
+  }

@@ -8,14 +8,15 @@ import { BadgesDirective } from './badges.directive';
 
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-// import {MatBadgeModule, MatButtonModule, MatIconModule} from '@angular/material';
+import {MatBadgeModule, MatButtonModule, MatIconModule} from '@angular/material';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+
+export class BadgeOverviewExample {}
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    // CustomButtomComponent,
     CustomButtonComponent,
     MailComponent,
     BadgesDirective
@@ -23,7 +24,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
   imports: [
     BrowserModule,
       BrowserAnimationsModule,
-      // MatBadgeModule, MatButtonModule, MatIconModule,
+      MatBadgeModule, MatButtonModule, MatIconModule,
       FormsModule,
       ReactiveFormsModule
   ],
