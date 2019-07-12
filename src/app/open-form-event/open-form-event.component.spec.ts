@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CustomButtonComponent } from './custom-button.component';
+import { OpenFormEventComponent } from './open-form-event.component';
 
-describe('CustomButtonComponent', () => {
-  let component: CustomButtonComponent;
-  let fixture: ComponentFixture<CustomButtonComponent>;
+describe('OpenFormEventComponent', () => {
+  let component: OpenFormEventComponent;
+  let fixture: ComponentFixture<OpenFormEventComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CustomButtonComponent ]
+      declarations: [ OpenFormEventComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CustomButtonComponent);
+    fixture = TestBed.createComponent(OpenFormEventComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
