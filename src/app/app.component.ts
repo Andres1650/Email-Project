@@ -5,7 +5,7 @@ import { Component, OnInit, DoCheck, AfterContentInit, AfterContentChecked, Afte
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit, AfterViewInit, AfterContentChecked, DoCheck, AfterContentInit{
+export class AppComponent implements OnInit, AfterContentChecked, DoCheck, AfterContentInit{
   title = 'my-first-project';
   number = [2, 3, 4];
 
@@ -17,9 +17,6 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentChecked,
     console.log('Checked again')
   }
 
-  ngAfterViewInit(){
-    console.log('Checked again, are you feeling it Mr.Krabs')
-  }
 
   ngDoCheck(){
     console.log('Check')
@@ -36,5 +33,12 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentChecked,
 
   keyUpEvent(){
     console.log('Key Up!');
+  }
+  formShow(){
+    document.getElementById("login-form").style.display = "block";
+  }
+
+  formHide(){
+    document.getElementById("login-form").style.display = "none";
   }
 }

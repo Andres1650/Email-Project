@@ -2,13 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators} from '@angular/forms';
 
 
+
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
+  // public readonly loginForm: FormGroup;
+  
+  // constructor
+  
   loginForm: FormGroup;
 
   constructor() { }
@@ -32,14 +37,16 @@ export class LoginComponent implements OnInit {
     ); 
   }
 
-  
+  formHide(){
+    document.getElementById("login-form").style.display = "none";
+  }
   
   
   onSubmit(){
     console.log(this.loginForm)
     }
   
-  onReset(){
-    this.loginForm.reset();
-    }
+  // onReset(){
+  //   this.loginForm.reset();
+  //   }
 }

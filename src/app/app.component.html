@@ -92,13 +92,13 @@
         <span class="top-btn-spacing"><i class="fas fa-angle-right" style='font-size:20px'></i></span>
         <i class="fas fa-times" style='font-size:20px'></i>
 
-        <button mat-raised-button="" id="login-btn" class="form-btns">
+        <button mat-raised-button="" (click)="formShow()" class="form-btns" id="login-btn">
       <span class="mat-button-wrapper">
       Login
     </span></button>
        
     <div>
-      <app-login id="login"></app-login>
+      <app-login id="login-form"></app-login>
     </div>
     </div>
       

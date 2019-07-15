@@ -11,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 export class OpenFormEventComponent implements OnInit {
 
   constructor() { 
-    let btn = document.getElementById("coolbutton");
+    let btn = document.getElementById("login-btn");
     btn.addEventListener("click", (e:Event) => document.getElementById("myForm").style.display = "block");
   }
 

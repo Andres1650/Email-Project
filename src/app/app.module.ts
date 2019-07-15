@@ -17,10 +17,6 @@ import { DraftComponent } from './draft/draft.component';
 export class BadgeOverviewExample {}
 
 
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,

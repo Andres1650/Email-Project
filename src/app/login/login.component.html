@@ -3,7 +3,7 @@
     <div class="col-12 col-md-8 form-box">
         <form [formGroup]="loginForm" action="/action_page.php">
 
-          <h1>Login</h1>
+          <h1 class="center">Login</h1>
 
           <!-- Email login -->
           <div class="row">
@@ -45,17 +45,9 @@
                     id="back-btn"
                     class="btn col-3 pure-button pure-button-danger"
                     type="button"
-                    onclick="closeForm()">Back</button>
+                    (click)="formHide()">Back</button>
 
-                    <script>
-                      function openForm() {
-                        document.getElementById("login").style.display = "block";
-                      }
-                      
-                      function closeForm() {
-                        document.getElementById("login").style.display = "none";
-                      }
-                      </script>
+                    
                   
                 </div>
 
