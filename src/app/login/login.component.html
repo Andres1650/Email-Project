@@ -2,8 +2,10 @@
   <div class="row justify-content-md-center">
     <div class="col-12 col-md-8 form-box">
         <form [formGroup]="loginForm" action="/action_page.php">
-
-          <h1 class="center">Login</h1>
+          
+          <div class="row-center">
+            <h1>Login</h1>
+          </div>
 
           <!-- Email login -->
           <div class="row">
@@ -35,19 +37,14 @@
             </div>
           </div>
             
-            <div class="row-btns justify-items-center">
+            <div class="row-center">
                 <button
                   class="btn col-3 pure-button pure-button-primary" 
                   type="submit"
                   [disabled]="!loginForm.valid">Login</button>
-                  
-                    <!-- <button
-                    id="back-btn"
-                    class="btn col-3 pure-button pure-button-danger"
-                    type="button"
-                    (click)="formExit()">Back</button> -->
+                
 
-                    <a mat-raised-button="" class="btn col-3 pure-button pure-button-danger" routerLink="/">Back</a>
+                  <a mat-raised-button="" class="btn col-3 pure-button pure-button-danger" routerLink="/">Back</a>
                     
                   
                 </div>

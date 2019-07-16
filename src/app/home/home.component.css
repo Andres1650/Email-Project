@@ -33,9 +33,16 @@
 
 .form-btns{
   margin-left: 2vh;
-  margin-top: -4vh;
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 136, 248);
+}
+
+#login-btn{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 136, 248);
+}
+
+#signup-btn{
+    color: rgb(104, 104, 104);
+    background-color: rgb(233, 233, 233);
 }
 
 #top-spacing{

@@ -1,0 +1,60 @@
+<div class="container-login">
+    <div class="row justify-content-md-center">
+      <div class="col-12 col-md-8 form-box">
+          <form [formGroup]="signupForm" action="/action_page.php">
+            
+            <div class="row-center">
+              <h1>Sign Up</h1>
+            </div>
+
+            <!-- Name-signup -->
+          <div class="row">
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  id="name"
+                  formControlName="name"
+                  class="form-control">
+                <span
+                  *ngIf="!signupForm.get('name').valid && signupForm.get('name').touched"
+                  class="form-text text-muted"><i class='fas fa-exclamation-circle' style='color:red'></i>Please enter a Name!</span>
+              </div>
+            </div>
+
+  
+            <!-- Email login -->
+            <div class="row">
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input
+                type="text"
+                id="email"
+                formControlName="email"
+                class="form-control">
+                <span
+                *ngIf="!loginForm.get('email').valid && loginForm.get('email').touched"
+                class="form-text text-muted"><i class='fas fa-exclamation-circle' style='color:red'></i>Invalid Email!</span>
+              </div>
+            </div>
+
+            <!-- Date signup -->
+            <div class="row">
+                <div class="form-group">
+                    <label for="date">Birth Date:</label>
+                    <input
+                      type="date"
+                      id="date"
+                      formControlName="date"
+                      class="form-control">
+                    
+                    <span
+                      *ngIf="!signupForm.get('date').valid && signupForm.get('date').touched" 
+                      class="form-text text-muted" ><i class='fas fa-exclamation-circle' style='color:red'></i>Invalid dates!</span>
+                  </div>
+            </div>
+
+        </form>
+      </div>
+   </div>
+</div>

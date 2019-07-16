@@ -15,6 +15,7 @@ import { LoginComponent } from './login/login.component';
 import { DraftComponent } from './draft/draft.component';
 
 import {Routes, RouterModule } from '@angular/router';
+import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes =[
   {
@@ -30,6 +31,13 @@ const routes: Routes =[
     component: LoginComponent,
     data:{
       title: 'Login page'
+    }
+  },
+  {
+    path: 'signup',
+    component: SignupComponent,
+    data:{
+      title: 'Sign Up page'
     }
   }
 
@@ -47,7 +55,8 @@ export class BadgeOverviewExample {}
     BadgesDirective,
     LoginComponent,
     DraftComponent,
-    OpenFormEventComponent
+    OpenFormEventComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

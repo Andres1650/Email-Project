@@ -1,20 +1,17 @@
-.container-login{
+.container{
     margin-top: 30px;
-    /* width: 85%; */
-    margin-right: 70vh;
+    width: 52%;
+    margin-left: auto;
+    margin-right: auto;
     font-family: cursive;
     padding: 3vh;
-    position: fixed;
-    right: 15px;
 }
 .form-box{
-    width: 500px;
     padding: 20px;
     border: 1px solid #c9c9c9;
     border-radius: 10px;
     box-shadow: 2px 2px 0px 0px #a0a0a0;
     margin-left: 5vh;
-    background-color: rgb(152, 217, 255);
     
 }
 
@@ -52,8 +49,6 @@
 .row{
     height: 5vh;
     padding: 2vh;
-    text-align:center; 
-    display: inline-block;
 }
 
 .btn{
@@ -61,7 +56,11 @@
     margin: 2vh;
 }
 
-.row-center{
+.row-btns{
     padding: .5vh;
-    text-align:center;
+    align-items: center;
+}
+
+#reset-btn{
+    background-color: rgb(230, 230, 230);
 }
