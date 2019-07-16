@@ -14,6 +14,28 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { DraftComponent } from './draft/draft.component';
 
+import {Routes, RouterModule } from '@angular/router';
+
+const routes: Routes =[
+  {
+    path: '',
+    component: HomeComponent,
+    // patchMatch: 'full',
+    data:{
+      title: 'Email'
+    }
+  },
+  {
+    path: 'login',
+    component: LoginComponent,
+    data:{
+      title: 'Login page'
+    }
+  }
+
+];
+
+
 export class BadgeOverviewExample {}
 
 
@@ -32,7 +54,8 @@ export class BadgeOverviewExample {}
       BrowserAnimationsModule,
       MatBadgeModule, MatButtonModule, MatIconModule,
       FormsModule,
-      ReactiveFormsModule
+      ReactiveFormsModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,7 @@
 import { Component, OnInit, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit } from '@angular/core';
+import {Router, ActivatedRoute, NavigationEnd } from '@angular/router';
+import {Title} from '@angular/platform-browser';;
+import{filter,map} from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -6,8 +9,14 @@ import { Component, OnInit, DoCheck, AfterContentInit, AfterContentChecked, Afte
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit, AfterContentChecked, DoCheck, AfterContentInit{
-  title = 'my-first-project';
-  number = [2, 3, 4];
+  // title = 'my-first-project';
+
+  constructor(
+    private readonly router: Router,
+    private readonly title: Title,
+    private readonly route: ActivatedRoute
+  ) {};
+
 
   public ten: number =10;
 
@@ -23,22 +32,28 @@ export class AppComponent implements OnInit, AfterContentChecked, DoCheck, After
   }
 
   ngOnInit(){
-    this.keyUpEvent();
-    // console.log('Ng OnInit');
+    // this.keyUpEvent();
+    
+    this.router.events
+    .pipe(filter((event => event instanceof NavigationEnd)))
+    .pipe(map(() => this.route))
+    .pipe(
+      map(route => {
+        while(route.firstChild){
+          route = route.firstChild;
+        }
+        return route;
+      })
+    )
+    .subscribe(route=>{
+      const routeData = route.snapshot.data;
+      this.title.setTitle('Email')
+    })
+
   }
 
   ngAfterContentInit(){
     console.log('After checked')
   }
 
-  keyUpEvent(){
-    console.log('Key Up!');
-  }
-  formShow(){
-    document.getElementById("login-form").style.display = "block";
-  }
-
-  formHide(){
-    document.getElementById("login-form").style.display = "none";
-  }
 }

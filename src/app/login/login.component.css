@@ -17,23 +17,10 @@
     
 }
 
-.center{
-    
-}
-
 .color-btns{
     margin-right: .25vh;
     margin-left: .15vh;
 }
-
-/* .form-popup {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    right: 15px;
-    border: 3px solid #f1f1f1;
-    z-index: 9;
-  }   */
 
 .fas{
     padding-right: .9vh;
@@ -74,8 +61,4 @@
 .row-btns{
     padding: .5vh;
     align-items: center;
-}
-
-#reset-btn{
-    background-color: rgb(230, 230, 230);
 }

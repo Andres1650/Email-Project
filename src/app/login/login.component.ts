@@ -37,16 +37,5 @@ export class LoginComponent implements OnInit {
     ); 
   }
 
-  formHide(){
-    document.getElementById("login-form").style.display = "none";
-  }
   
-  
-  onSubmit(){
-    console.log(this.loginForm)
-    }
-  
-  // onReset(){
-  //   this.loginForm.reset();
-  //   }
 }
