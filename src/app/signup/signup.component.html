@@ -1,4 +1,4 @@
-<div class="container-login">
+<div class="container-signup">
     <div class="row justify-content-md-center">
       <div class="col-12 col-md-8 form-box">
           <form [formGroup]="signupForm" action="/action_page.php">
@@ -18,12 +18,12 @@
                   class="form-control">
                 <span
                   *ngIf="!signupForm.get('name').valid && signupForm.get('name').touched"
-                  class="form-text text-muted"><i class='fas fa-exclamation-circle' style='color:red'></i>Please enter a Name!</span>
+                  class="form-text text-muted"><i class='fas fa-exclamation-circle' style='color:red'></i>Enter a Name!</span>
               </div>
             </div>
 
   
-            <!-- Email login -->
+            <!-- Email signup -->
             <div class="row">
               <div class="form-group">
                 <label for="email">Email:</label>
@@ -33,10 +33,25 @@
                 formControlName="email"
                 class="form-control">
                 <span
-                *ngIf="!loginForm.get('email').valid && loginForm.get('email').touched"
-                class="form-text text-muted"><i class='fas fa-exclamation-circle' style='color:red'></i>Invalid Email!</span>
+              *ngIf="!signupForm.get('email').valid && signupForm.get('email').touched"
+              class="form-text text-muted"><i class='fas fa-exclamation-circle' style='color:red'></i>Invalid Email!</span>
               </div>
             </div>
+
+            <!-- Password-signup -->
+          <div class="row">
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                id="password"
+                formControlName="password"
+                class="form-control">
+              <span
+                *ngIf="!signupForm.get('password').valid && signupForm.get('password').touched"
+                class="form-text text-muted"><i class='fas fa-exclamation-circle' style='color:red'></i>Invalid password!</span>
+            </div>
+          </div>
 
             <!-- Date signup -->
             <div class="row">
@@ -52,8 +67,16 @@
                       *ngIf="!signupForm.get('date').valid && signupForm.get('date').touched" 
                       class="form-text text-muted" ><i class='fas fa-exclamation-circle' style='color:red'></i>Invalid dates!</span>
                   </div>
-            </div>
+                </div>
 
+                <div class="row-center">
+                    <button
+                      class="btn col-3 pure-button pure-button-primary" 
+                      type="submit"
+                      [disabled]="!signupForm.valid">Sign Up</button>
+                      <a mat-raised-button="" class="btn col-3 pure-button pure-button-danger" routerLink="/">Back</a>
+                    </div>
+    
         </form>
       </div>
    </div>

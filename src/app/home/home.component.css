@@ -7,8 +7,6 @@
 }
 
 
-
-
 #login-form{
   display: none;
 }
@@ -94,21 +92,25 @@
     
 }
 
-#main-button{
-    font-family: cursive;
-    padding:1.55vh;
-    margin: 1.3vh;
-    size: 25px;
-    width: 17vh;
-    border-width: 3px;
-    border-radius: 8px;
-    background-color: rgb(4, 22, 126);
-    color: aliceblue;
-    text-shadow:none !important;
-    border:none !important; 
-    box-shadow:none !important;
-    font-size: 16px;
-    
+#main-icon{
+  margin-right: -25px;
+}
+
+  .btn{
+  margin-top: -15px;
+  text-shadow:none !important;
+  border:none !important; 
+  box-shadow:none !important;
+  width: 16vh;
+  font-size: 16px;
+  font-family: cursive;
+  height: 55px;
+  margin: 1.3vh;
+  border-width: 3px;
+  background-color: rgb(4, 28, 165);
+  color: aliceblue;
+  padding:1.55vh;
+  border-radius: 12%;
 }
 
 #address{

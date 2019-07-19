@@ -16,6 +16,7 @@ import { DraftComponent } from './draft/draft.component';
 
 import {Routes, RouterModule } from '@angular/router';
 import { SignupComponent } from './signup/signup.component';
+import { NewDraftComponent } from './new-draft/new-draft.component';
 
 const routes: Routes =[
   {
@@ -39,6 +40,13 @@ const routes: Routes =[
     data:{
       title: 'Sign Up page'
     }
+  },
+  {
+    path: 'draft',
+    component: NewDraftComponent,
+    data:{
+      title: 'New Draft'
+    }
   }
 
 ];
@@ -56,7 +64,8 @@ export class BadgeOverviewExample {}
     LoginComponent,
     DraftComponent,
     OpenFormEventComponent,
-    SignupComponent
+    SignupComponent,
+    NewDraftComponent
   ],
   imports: [
     BrowserModule,

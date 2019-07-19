@@ -2,20 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators} from '@angular/forms';
 
 
-
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  // public readonly loginForm: FormGroup;
-  
-  // constructor
-  
-  loginForm: FormGroup;
 
+  loginForm: FormGroup;
   constructor() { }
 
   validateQuantity(): void{
@@ -26,7 +20,10 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(){
     this.loginForm = new FormGroup({
+      // 'name': new FormControl(null,Validators.required),
       'email': new FormControl(null,[Validators.required,Validators.email]),
+      'password': new FormControl(null,Validators.required),
+      // 'date': new FormControl(null,Validators.required),
     })
     
     this.loginForm.valueChanges.subscribe(
@@ -36,6 +33,7 @@ export class LoginComponent implements OnInit {
       (status) => console.log(status)
     ); 
   }
+
 
   
 }

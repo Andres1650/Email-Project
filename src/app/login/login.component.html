@@ -31,23 +31,19 @@
                 id="password"
                 formControlName="password"
                 class="form-control">
-              <!-- <span
+            <span
                 *ngIf="!loginForm.get('password').valid && loginForm.get('password').touched"
-                class="form-text text-muted"><i class='fas fa-exclamation-circle' style='color:red'></i>Please enter a password!</span> -->
+                class="form-text text-muted"><i class='fas fa-exclamation-circle' style='color:red'></i>Invalid password!</span>
             </div>
           </div>
             
             <div class="row-center">
-                <button
-                  class="btn col-3 pure-button pure-button-primary" 
-                  type="submit"
-                  [disabled]="!loginForm.valid">Login</button>
-                
-
-                  <a mat-raised-button="" class="btn col-3 pure-button pure-button-danger" routerLink="/">Back</a>
-                    
-                  
-                </div>
+              <button
+              class="btn col-3 pure-button pure-button-primary" 
+              type="submit"
+              [disabled]="!loginForm.valid">Login</button>
+              <a mat-raised-button="" class="btn col-3 pure-button pure-button-danger" routerLink="/">Back</a>
+            </div>
 
         </form>
       </div>
