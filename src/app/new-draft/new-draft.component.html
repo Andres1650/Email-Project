@@ -1,3 +1,67 @@
-<p>
-  new-draft works!
-</p>
+<div class="container-draft">
+  <div class="row justify-content-md-center">
+    <div class="col-12 col-md-8 form-box">
+        <form [formGroup]="draftForm" action="/action_page.php">
+          
+          <div class="row-center">
+            <h1>New Draft</h1>
+          </div>
+
+          <!-- Email login -->
+          <div class="row">
+            <div class="form-group">
+              <label for="receiver">To:</label>
+              <input
+              type="text"
+              id="receiver"
+              formControlName="receiver"
+              class="form-control">
+              <span
+              *ngIf="!draftForm.get('receiver').valid && draftForm.get('receiver').touched"
+              class="form-text text-muted"><i class='fas fa-exclamation-circle' style='color:red'></i>Invalid Email!</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <label for="subject">Subject:</label>
+              <input
+              type="text"
+              id="subject"
+              formControlName="subject"
+              class="form-control">
+              <span
+              *ngIf="!draftForm.get('subject').valid && draftForm.get('subject').touched"
+              class="form-text text-muted"><i class='fas fa-exclamation-circle' style='color:red'></i>Missing Subject!</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <!-- <label id="label-above" for="body">Body:</label> -->
+              <textarea 
+              type="text"
+              id="body-text"
+              formControlName="body"
+              class="form-control"
+              name="text" rows="14" cols="10" wrap="soft"> 
+              </textarea>
+              <span
+              *ngIf="!draftForm.get('body').valid && draftForm.get('body').touched"
+              class="form-text text-muted"><i class='fas fa-exclamation-circle' style='color:red'></i>Empty Body!</span>
+            </div>
+          </div>
+          
+          
+            <div class="row-center">
+              <button
+              class="btn col-3 pure-button pure-button-primary" 
+              type="submit"
+              [disabled]="!draftForm.valid">Send</button>
+              <a mat-raised-button="" class="btn col-3 pure-button pure-button-danger" routerLink="/">Back</a>
+            </div>
+
+        </form>
+      </div>
+    </div>
+</div>
